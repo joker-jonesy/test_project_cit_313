@@ -2,7 +2,7 @@ import React from 'react';
 
 function Box(props){
 
-    const [name, setName]=React.useState(props.name)
+    const [name]=React.useState(props.name)
     const [number, setNumber]=React.useState(10);
 
 
