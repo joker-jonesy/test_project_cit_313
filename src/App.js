@@ -1,26 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Box from "./components/Box";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-         Hello world
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    const [toggle, setToggle] = React.useState("Hiya");
+    const [color, setColor]= React.useState("blue");
+
+    return (
+        <div className="App" style={{backgroundColor:color, color: "white"}}>
+            <div className="cool">
+                {toggle}
+            </div>
+            <button onClick={()=>setToggle("Hello there")}>Click Me</button>
+            <button onClick={()=>setColor("red")}>Change Color</button>
+            <Box name={"Fred"} />
+            <Box name={"Bob"} />
+            <Box name={"Alive"} />
+            <Box name={"Ally"} />
+        </div>
+    );
 }
 
 export default App;
