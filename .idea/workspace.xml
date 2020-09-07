@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6a970be-250f-4b73-839d-3ec53c06ef22" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Box.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/style.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Box.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Box.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +43,11 @@
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/style" />
+    </key>
+  </component>
   <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
@@ -68,6 +75,8 @@
       <updated>1598293876782</updated>
       <workItem from="1598293882124" duration="1364000" />
       <workItem from="1598893639300" duration="4340000" />
+      <workItem from="1599071265667" duration="1534000" />
+      <workItem from="1599498293910" duration="2346000" />
     </task>
     <servers />
   </component>

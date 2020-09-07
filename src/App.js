@@ -1,6 +1,7 @@
 import React from 'react';
-import './App.css';
+import './style/App.css';
 import Box from "./components/Box";
+import style from "./style/style";
 
 function App() {
 
@@ -12,12 +13,13 @@ function App() {
             <div className="cool">
                 {toggle}
             </div>
+            <div style={style.exampleBox}></div>
             <button onClick={()=>setToggle("Hello there")}>Click Me</button>
             <button onClick={()=>setColor("red")}>Change Color</button>
-            <Box name={"Fred"} />
-            <Box name={"Bob"} />
-            <Box name={"Alive"} />
-            <Box name={"Ally"} />
+            <Box name={"Fred"} age={69}/>
+            <Box name={"Bob"} age={70}/>
+            <Box name={"Alive"} age={65}/>
+            <Box name={"Ally"} age={20}/>
         </div>
     );
 }
