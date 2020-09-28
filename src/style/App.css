@@ -4,8 +4,16 @@ html{
 
 .box{
   background-color: rebeccapurple;
-  height: 100px;
+  min-height: 100px;
   width: 500px;
+  color:white;
+}
+
+.theOtherBox{
+  background-color: rebeccapurple;
+  min-height: 100px;
+  width: 500px;
+  color:orange;
 }
 
 .App {

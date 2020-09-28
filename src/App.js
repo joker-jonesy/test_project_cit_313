@@ -1,25 +1,28 @@
 import React from 'react';
 import './style/App.css';
-import Box from "./components/Box";
-import style from "./style/style";
+import Home from "./components/Home";
+import About from "./components/About";
+import DataPage from "./components/DataPage";
+import Nav from "./components/Nav";
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route
+} from "react-router-dom";
 
 function App() {
 
-    const [toggle, setToggle] = React.useState("Hiya");
-    const [color, setColor]= React.useState("blue");
 
     return (
-        <div className="App" style={{backgroundColor:color, color: "white"}}>
-            <div className="cool">
-                {toggle}
-            </div>
-            <div style={style.exampleBox}></div>
-            <button onClick={()=>setToggle("Hello there")}>Click Me</button>
-            <button onClick={()=>setColor("red")}>Change Color</button>
-            <Box name={"Fred"} age={69}/>
-            <Box name={"Bob"} age={70}/>
-            <Box name={"Alive"} age={65}/>
-            <Box name={"Ally"} age={20}/>
+        <div className="App">
+            <Router>
+                <Nav/>
+                <Switch>
+                    <Route path={"/dataPage/:id"} component={DataPage}/>
+                    <Route path={"/about"} component={About}/>
+                    <Route path={"/"} component={Home}/>
+                </Switch>
+            </Router>
         </div>
     );
 }
