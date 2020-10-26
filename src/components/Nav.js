@@ -8,6 +8,8 @@ function Nav() {
             <Link to={"/about"}>About</Link>
             <Link to={"/dataPage/Luke"}>Luke</Link>
             <Link to={"/dataPage/Jerry"}>Jerry</Link>
+            <Link to={"/comp"}>Components</Link>
+            <Link to={"/firepage"}>Fire Page</Link>
         </nav>
     )
 }

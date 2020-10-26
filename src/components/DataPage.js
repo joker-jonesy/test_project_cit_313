@@ -20,11 +20,11 @@ function DataPage(props){
         ogData.push({name:"freddy", age:30});
         setData(ogData);
 
-    }, [submit]);
+    }, [data,submit]);
 
     let boxEles = data.map((it,idx)=>
         <Box name={it.name} age={it.age}/>
-    )
+    );
 
     return(
         <div>
